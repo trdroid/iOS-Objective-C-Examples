@@ -2,7 +2,9 @@
 
 ### Declare and Define a Data Source
 
+<i>ViewController.m</i>
 
+As the data source has to be populated and ready by the time the table view asks for it, it is done so in the viewDidLoad() method as it gets called the first time the view controller is loaded, which happens much before the table attempts to populate itself. 
 
 ```objective-c
 #import "ViewController.h"
@@ -71,3 +73,4 @@
         "Cell 13",
         "Cell 14"
     )
+
